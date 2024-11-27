@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        NODE_DISABLE_COLORS = 1
+    }
     stages {
         stage('npm-build') {
             agent {
