@@ -7,7 +7,7 @@ pipeline {
                     label 'linux'
                     image 'node:23'
                     registryUrl 'https://docker.io'
-                    registryCredentials 'jenkins-docker-hub'
+                    registryCredentialsId 'jenkins-docker-hub'
                 }
             }
 
