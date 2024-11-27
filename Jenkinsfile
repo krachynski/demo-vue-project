@@ -1,9 +1,10 @@
 pipeline {
-    agent { label 'linux' }
+    agent any
     stages {
         stage('npm-build') {
             agent {
                 docker {
+                    label 'linux'
                     image 'node:23'
                 }
             }
