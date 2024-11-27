@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "cibuild": "NODE_DISABLE_COLORS=1 vite build",
     "preview": "vite preview"
   },
   "dependencies": {

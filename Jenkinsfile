@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        NODE_DISABLE_COLORS = 1
-    }
     stages {
         stage('npm-build') {
             agent {
@@ -20,7 +17,7 @@ pipeline {
                 withNPM(npmrcConfig: 'npmrc') {
                     echo "Performing npm build..."
                     sh 'npm install'
-                    sh 'npm run build'
+                    sh 'npm run cibuild'
                 }
             }
         }
