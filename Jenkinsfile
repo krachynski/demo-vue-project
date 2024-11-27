@@ -5,7 +5,7 @@ pipeline {
             agent {
                 docker {
                     label 'linux'
-                    image 'node:23'
+                    image 'library/node:23'
                     registryUrl 'https://docker.io'
                     registryCredentialsId 'jenkins-docker-hub'
                 }
