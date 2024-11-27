@@ -17,7 +17,7 @@ pipeline {
                 withNPM(npmrcConfig: 'npmrc') {
                     echo "Performing npm build..."
                     sh 'npm install'
-                    sh 'npm run cibuild'
+                    sh 'npm run build'
                 }
             }
         }
